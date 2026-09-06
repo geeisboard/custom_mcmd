@@ -15,7 +15,6 @@ LOG_MODULE_REGISTER(main, LOG_LEVEL_INF);
 int main(void)
 {   
     
-    // k_msleep(2000); /* wait for serial monitor to connect */
     printf("Application started\n");
 
     digee_init();
