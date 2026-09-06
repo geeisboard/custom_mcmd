@@ -1,0 +1,4 @@
+west:
+  command: /home/georg/zephyrworkspace/.venv/bin/west build -b mcmd_stm32_g0b1cc -p
+  topdir: /home/georg/zephyrworkspace
+  version: 1.5.0

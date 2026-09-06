@@ -1,0 +1,66 @@
+cmake:
+  application:
+    configuration-dir: '/home/georg/zephyrworkspace/my_projects/mcmdstm32_g0b/custom_mcmd'
+    source-dir: '/home/georg/zephyrworkspace/my_projects/mcmdstm32_g0b/custom_mcmd'
+  board:
+    name: 'mcmd_stm32_g0b1cc'
+    path:
+     - '/home/georg/zephyrworkspace/zephyr/boards/digee/mcmd_stm32_g0b1cc'
+    qualifiers: 'stm32g0b1xx'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/home/georg/zephyrworkspace/my_projects/mcmdstm32_g0b/custom_mcmd/dts/bindings'
+     - '/home/georg/zephyrworkspace/zephyr/boards/digee/mcmd_stm32_g0b1cc/dts/bindings'
+     - '/home/georg/zephyrworkspace/zephyr/dts/bindings'
+    files:
+     - '/home/georg/zephyrworkspace/zephyr/boards/digee/mcmd_stm32_g0b1cc/mcmd_stm32_g0b1cc.dts'
+     - '/home/georg/zephyrworkspace/my_projects/mcmdstm32_g0b/custom_mcmd/boards/mcmd_stm32_g0b1cc.overlay'
+    include-dirs:
+     - '/home/georg/zephyrworkspace/my_projects/mcmdstm32_g0b/custom_mcmd/include'
+     - '/home/georg/zephyrworkspace/my_projects/mcmdstm32_g0b/custom_mcmd/dts'
+     - '/home/georg/zephyrworkspace/modules/hal/ambiq/dts'
+     - '/home/georg/zephyrworkspace/modules/hal/atmel/include'
+     - '/home/georg/zephyrworkspace/modules/hal/bouffalolab/include'
+     - '/home/georg/zephyrworkspace/modules/hal/bouffalolab/include/zephyr'
+     - '/home/georg/zephyrworkspace/modules/hal/gigadevice/include'
+     - '/home/georg/zephyrworkspace/modules/hal/microchip/include'
+     - '/home/georg/zephyrworkspace/modules/hal/microchip/dts'
+     - '/home/georg/zephyrworkspace/modules/hal/nuvoton/dts'
+     - '/home/georg/zephyrworkspace/modules/hal/nxp/dts'
+     - '/home/georg/zephyrworkspace/modules/hal/stm32/dts'
+     - '/home/georg/zephyrworkspace/modules/hal/ti/dts'
+     - '/home/georg/zephyrworkspace/zephyr/boards/digee/mcmd_stm32_g0b1cc/dts'
+     - '/home/georg/zephyrworkspace/zephyr/include'
+     - '/home/georg/zephyrworkspace/zephyr/include/zephyr'
+     - '/home/georg/zephyrworkspace/zephyr/dts/common'
+     - '/home/georg/zephyrworkspace/zephyr/dts/vendor'
+     - '/home/georg/zephyrworkspace/zephyr/dts/rx'
+     - '/home/georg/zephyrworkspace/zephyr/dts/x86'
+     - '/home/georg/zephyrworkspace/zephyr/dts/xtensa'
+     - '/home/georg/zephyrworkspace/zephyr/dts/sparc'
+     - '/home/georg/zephyrworkspace/zephyr/dts/riscv'
+     - '/home/georg/zephyrworkspace/zephyr/dts/posix'
+     - '/home/georg/zephyrworkspace/zephyr/dts/arm64'
+     - '/home/georg/zephyrworkspace/zephyr/dts/arm'
+     - '/home/georg/zephyrworkspace/zephyr/dts/arc'
+     - '/home/georg/zephyrworkspace/zephyr/dts'
+    user-files:
+     - '/home/georg/zephyrworkspace/my_projects/mcmdstm32_g0b/custom_mcmd/boards/mcmd_stm32_g0b1cc.overlay'
+  kconfig:
+    files:
+     - '/home/georg/zephyrworkspace/zephyr/boards/digee/mcmd_stm32_g0b1cc/mcmd_stm32_g0b1cc_defconfig'
+     - '/home/georg/zephyrworkspace/my_projects/mcmdstm32_g0b/custom_mcmd/prj.conf'
+    user-files:
+     - '/home/georg/zephyrworkspace/my_projects/mcmdstm32_g0b/custom_mcmd/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: '/home/georg/zephyr-sdk-0.17.4'
+  zephyr:
+    version: '4.3.99'
+    zephyr-base: '/home/georg/zephyrworkspace/zephyr'
+version: '0.1.0'
+west:
+  command: '/home/georg/zephyrworkspace/.venv/bin/west build -b mcmd_stm32_g0b1cc -p'
+  topdir: '/home/georg/zephyrworkspace'
+  version: '1.5.0'
